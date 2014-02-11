@@ -86,6 +86,21 @@
     }
 }
 
+- (void)random:(id)sender
+{
+    for (int i=0; i<gameSize; i++)
+    {
+        for (int j=0; j<gameSize; j++)
+        {
+            if (arc4random() % 2 == 1)
+            {
+                Cell *c = cells[i][j];
+                [c live];
+            }
+        }
+    }
+}
+
 - (Cell *)getTouchedCell:(CGPoint)pos
 {
     for (int i=0; i<gameSize; i++)
