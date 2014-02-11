@@ -787,6 +787,14 @@
 					</dict>
 					<dict>
 						<key>name</key>
+						<string>togglesSelectedState</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>name</key>
 						<string>backgroundSpriteFrame|Normal</string>
 						<key>type</key>
 						<string>SpriteFrame</string>
@@ -861,6 +869,19 @@
 						<array>
 							<string></string>
 							<string></string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>backgroundColor|Selected</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>0.0</real>
+							<real>0.13550171256065369</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -988,6 +1009,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
@@ -1309,8 +1332,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

@@ -56,7 +56,6 @@
             [c die];
         }
     }
-    [self setAnimating:NO];
 }
 
 - (void)next:(id)sender
@@ -66,7 +65,7 @@
 
 - (void)animate:(id)sender
 {
-    [self setAnimating:YES];
+    [self setAnimating:![self animating]];
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
@@ -114,7 +113,7 @@
                  (pos.x < c.position.x + [c width] / 2) &&
                  (pos.y > c.position.y - [c height] / 2) &&
                  (pos.y < c.position.y + [c height] / 2)
-                 )
+                )
             {
                 return c;
             }
