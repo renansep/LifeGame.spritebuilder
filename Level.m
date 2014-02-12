@@ -160,8 +160,6 @@
                 if (aliveNeighbors == 3)
                     [cell setWillLive:YES];
             }
-            
-            
         }
     }
     
